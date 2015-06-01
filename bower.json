@@ -1,0 +1,29 @@
+{
+  "name": "jqXMLParser",
+  "version": "0.1.0",
+  "keywords": ["XML", "parser", "jQuery", "JSON", "converter"],
+  "homepage": "https://github.com/nim579/jqXMLParser",
+  "authors": [
+    "Nick Iv <studio@nim579.ru>"
+  ],
+  "description": "jQuery XML-JSON converter",
+  "main": "lib/app.js",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src",
+    "test",
+    "tests",
+    "tmp",
+    "Gruntfile.coffee"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "underscore": "~1.8.3"
+  }
+}

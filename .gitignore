@@ -1,0 +1,6 @@
+.DS_Store
+/lib/
+/node_modules/
+/bower_components/
+/tmp/
+/tests/*.js

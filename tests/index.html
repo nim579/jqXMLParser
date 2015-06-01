@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Converter test</title>
+        <style type="text/css">
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                font-family: "Open Sans", "Helvetica Neue", sans-serif;
+                font-size: 80%;
+                color: #222222;
+            }
+            .text {
+                display: inline-block;
+                width: 50%;
+                height: 100%;
+                box-sizing: border-box;
+            }
+            .text1 {
+                padding: 40px 20px 40px 40px;
+            }
+            .text2 {
+                padding: 40px 40px 40px 20px;
+            }
+            textarea {
+                display: table-cell;
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+                padding: 1em;
+                border: 1px solid #c2c2c2;
+                box-shadow: none;
+            }
+        </style>
+        <script type="text/javascript" src="libs.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                var parse = function(){
+                    var xml = $('.inp').val();
+                    var result = XMLParser.parse(xml);
+                    $('.res').val(JSON.stringify(result, null, 4));
+                }
+                $('.inp').bind('keyup', parse)
+                parse();
+            });
+        </script>
+    </head>
+    <body>
+        <div class="text text1">
+            <textarea class="inp"></textarea>
+        </div><div class="text text2">
+            <textarea class="res"></textarea>
+        </div>
+    </body>
+</html>
