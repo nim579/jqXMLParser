@@ -50,7 +50,7 @@ module.exports = (grunt)->
                         //     <%= pkg.name %>.js <%= pkg.version %>
                         //     <%= pkg.homepage %>
                         //     (c) 2015 Nick Iv (studio@nim579.ru)
-                        //     <%= pkg.name %> may be freely distributed under the <% pkg.license %> license.
+                        //     <%= pkg.name %> may be freely distributed under the <%= pkg.license %> license.
 
                     """
 
